@@ -1,0 +1,214 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+}
+
+#container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 96px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+#country, #degree-title {
+    font-weight: 700;
+}
+
+#input_weather::placeholder {
+    opacity: 1;
+    color: #CCCCCC;
+    transition: all 100ms ease-in-out;
+}
+
+#input_weather:focus {
+    border: 3px solid #12a3f7;
+}
+
+#input_weather:focus::placeholder {
+    opacity: 0;
+}
+
+
+#input_weather {
+    color: blue;
+    outline: none;
+    display: block;
+    border-radius: 10px;
+    border: 3px solid #CCCCCC;
+    padding: 5px ;
+    width: 200px;
+    align-items: center;
+}
+
+span {
+    display: block;
+}
+
+h1, h2, p {
+    margin-bottom: 10px;
+}
+
+.flex-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blocks {
+    display: none;
+    width: 100%;
+}
+
+.enter-city, .error-message{
+    display: none;
+}
+
+h3 {
+    text-align: center;
+    font-weight: 700;
+}
+
+#block {
+    background: #28688C;
+    box-shadow: 1px 5px 25px 3px #444;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 100%;
+    padding: 15px;
+    position: relative;
+
+}
+
+#left-block {
+    width: 30%;
+}
+
+#center-block {
+    text-align: center;
+    width: 50%;
+}
+
+#right-block {
+    width: 20%;
+}
+
+#weather_icon {
+    width: 100px;
+    height: 100px;
+}
+
+#weather {
+    margin-bottom: 0;
+}
+
+#icon-degree {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#degree-temp {
+    font-weight: 700;
+    font-size: 65px;
+}
+
+
+.cs-loader {
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 100px;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .cs-loader-inner {
+    transform: translateY(-50%);
+    top: 50%;
+    position: absolute;
+    width: calc(100% - 200px);
+    color: blue;
+    padding: 0 100px;
+    text-align: center;
+  }
+  
+  .cs-loader-inner label {
+    font-size: 20px;
+    opacity: 0;
+    display:inline-block;
+  }
+  
+  @keyframes lol {
+    0% {
+      opacity: 0;
+      transform: translateX(-300px);
+    }
+    33% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+    66% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(300px);
+    }
+  }
+  
+  @-webkit-keyframes lol {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(-300px);
+    }
+    33% {
+      opacity: 1;
+      -webkit-transform: translateX(0px);
+    }
+    66% {
+      opacity: 1;
+      -webkit-transform: translateX(0px);
+    }
+    100% {
+      opacity: 0;
+      -webkit-transform: translateX(300px);
+    }
+  }
+  
+  .cs-loader-inner label:nth-child(6) {
+    -webkit-animation: lol 3s infinite ease-in-out;
+    animation: lol 3s infinite ease-in-out;
+  }
+  
+  .cs-loader-inner label:nth-child(5) {
+    -webkit-animation: lol 3s 100ms infinite ease-in-out;
+    animation: lol 3s 100ms infinite ease-in-out;
+  }
+  
+  .cs-loader-inner label:nth-child(4) {
+    -webkit-animation: lol 3s 200ms infinite ease-in-out;
+    animation: lol 3s 200ms infinite ease-in-out;
+  }
+  
+  .cs-loader-inner label:nth-child(3) {
+    -webkit-animation: lol 3s 300ms infinite ease-in-out;
+    animation: lol 3s 300ms infinite ease-in-out;
+  }
+  
+  .cs-loader-inner label:nth-child(2) {
+    -webkit-animation: lol 3s 400ms infinite ease-in-out;
+    animation: lol 3s 400ms infinite ease-in-out;
+  }
+  
+  .cs-loader-inner label:nth-child(1) {
+    -webkit-animation: lol 3s 500ms infinite ease-in-out;
+    animation: lol 3s 500ms infinite ease-in-out;
+  }

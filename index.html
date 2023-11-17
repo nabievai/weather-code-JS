@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="container">
+        <input type="text" id="input_weather" placeholder="Search for a city...">
+        <div id="block">
+            <div class="cs-loader">
+                <div class="cs-loader-inner">
+                  <label>●</label>
+                  <label>●</label>
+                  <label>●</label>
+                  <label>●</label>
+                  <label>●</label>
+                  <label>●</label>
+                </div>
+              </div>
+            <div class="blocks">
+                <div class="flex-block">
+                    <div id="left-block">
+                        <h2 id="country">Bishkek, Kyrgyzstan</h2>
+                        <p id="data">Wednesday, December 14, 2022</p>
+                        <p id="time">13:49</p>
+                    </div>
+                    <div id="center-block">
+                        <div id="icon-degree">
+                        <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="" id="weather_icon">
+                        <h1 id="degree-temp">3 °c</h1>
+                        </div>
+                        <p id="weather">Sunny</p>
+                    </div>
+                    <div id="right-block">
+                        <p id="feels-like">Feels like: 3 °c</p>
+                        <p id="humidity">Humidity: 76%</p>
+                        <p id="wind">Wind: 3.6 kph</p>
+                    </div>
+                </div>
+            </div>
+            <div class="enter-city">
+            <h3>Please enter the name of the city and press enter to see results</h3>
+            </div>
+            <div class="error-message">
+                <h3>No matching location found</h3>
+            </div>
+        </div> 
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
